@@ -41,3 +41,19 @@ Unsupervised learning is a crucial subfield of machine learning that focuses on 
 ## Conclusion:
 
 Unsupervised learning techniques provide valuable tools for exploring and understanding the structure of data without the need for labeled examples. By leveraging clustering, dimensionality reduction, and anomaly detection methods, unsupervised learning enables data scientists and analysts to extract actionable insights, discover hidden patterns, and make informed decisions across a wide range of applications and domains.
+
+
+
+```python
+import time
+from sklearn.linear_model import LogisticRegression
+logreg=LogisticRegression()
+start=time.time()
+
+
+logreg.fit(spect_df,traget)
+end=time.time()
+
+
+traintime=end-start
+print('training time for logreg is:  ',traintime)
